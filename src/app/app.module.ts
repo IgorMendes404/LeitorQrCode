@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { QRScanner } from '@ionic-native/qr-scanner/ngx';
+
  
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { QRScanner } from '@ionic-native/qr-scanner/ngx';
   providers: [
     StatusBar,
     SplashScreen,
+    QRScanner,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
